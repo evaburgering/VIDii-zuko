@@ -2,10 +2,10 @@
   font-family:'Zuko-type';
   src: url('../fonts/Road_Rage.woff') format('woff2');}
 
-/* @font-face {
+@font-face {
   font-family:'SubtextTitel';
-  src: url('../fonts/Herculanum-Regular.woff') format('woff');
-} */
+  src: url('../fonts/Herculanum Regular.woff') format('woff');
+} 
   
 
 /**************/
@@ -19,6 +19,7 @@
 
 body {
   margin:0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button:not([disabled]) {
@@ -53,6 +54,34 @@ h1 {
   color:var(--color-headings);
   font-family: 'Zuko-type';
 }
+
+h2{
+  font-family:'SubtextTitel';
+}
+
+h3{
+font-size: 0.9em;
+font-weight: lighter;
+}
+
+
+
+
+article {
+  background-image: url('../images/scroll.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35%;
+}
+
+article h2{
+  font-size: 0.8em;
+} 
+
+article h2, h3,p{
+  padding-left: 4em;
+}
+
 
 
 
@@ -104,11 +133,6 @@ button{
     margin-bottom: 1em; 
 }
 
-article {
-  background-image: url('../images/scroll.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 /* ... */
 
