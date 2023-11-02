@@ -20,6 +20,10 @@
 body {
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  padding-left: 3em;
+  background-image: url("../images/fire-gif.gif");
+  background-position: center center;
 }
 
 button:not([disabled]) {
@@ -37,13 +41,37 @@ img {
 /*********************/
 
 :root {
-  --color-headings:crimson
-  /* ... */
+  /* Kleurvariabelen */
+  --color-background: #000000;
+  --color-headings: crimson;
+  --color-button-bg: #E4E0DF;
+  --color-button-border: transparent;
+  --color-button-hover: #932E0F;
+  --color-button-border-hover: #b65555;
 
+  --color-secondary-bg-1: #2c1a53;
+  --color-secondary-border-1: #504568;
+
+  --color-secondary-bg-2: #304B14;
+  --color-secondary-border-2: #67725a;
+
+  --color-secondary-bg-3: #616161;
+  --color-secondary-border-3: #b5b8b2;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  padding-left: 3em;
+  background-image: url("../images/fire-gif.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
-
+button:not([disabled]) {
+  cursor: pointer;
+}
 
 
 /********************/
@@ -51,60 +79,86 @@ img {
 /********************/
 
 h1 {
-  color:var(--color-headings);
+  color: var(--color-headings);
   font-family: 'Zuko-type';
+  color: var(--color-button-bg);
 }
 
-h2{
-  font-family:'SubtextTitel';
+h2 {
+  font-family: 'SubtextTitel';
+  font-size: 1.2em;
 }
 
-h3{
-font-size: 0.9em;
-font-weight: lighter;
+h3 {
+  font-size: 0.9em;
+  font-weight: lighter;
 }
 
 
 
+
+/* Scroll code v */
 
 article {
   background-image: url('../images/scroll.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 35%;
+  grid-column-start: 3;
+  justify-self: stretch;
+  padding-left: 2em;
+  padding-top: 4em;
 }
 
-article h2{
+article h2 {
   font-size: 0.8em;
 } 
 
-article h2, h3,p{
+article h2, h3 {
   padding-left: 4em;
+}
+
+article p {
+  font-size: 0.7em;
+  padding-left: 4em;
+}
+
+section.nations p {
+  color: var(--color-button-bg);
+  text-align: center;
 }
 
 
 
 
+/* de Nation selectie code v */
 button{
-  width: 7em;
-  height: 7em;
+  width: 6em;
+  height: 6em;
   background-color: #E4E0DF;
   border-radius: 50%;
   border: 0.5em;
   border-color: none;
   padding: 1.5em;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);}
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-bottom: 1em;}
 
   button:nth-of-type(1):hover {
     background-color: #932E0F; 
+    transition: background-color 0.3s ease; 
+    border: 0.1em solid #b65555; 
   }
 
   button:nth-of-type(1):hover img{
     filter:invert(1);
+    
   }
 
   section button:nth-child(3):hover {
     background-color: #2c1a53;
+    transition: background-color 0.3s ease; 
+    border: 0.1em solid #504568; 
   }
 
   section button:nth-child(3):hover img{
@@ -113,6 +167,8 @@ button{
 
   section button:nth-child(4):hover {
     background-color: #304B14;
+    transition: background-color 0.3s ease; 
+    border: 0.1em solid #67725a; 
   }
 
   section button:nth-child(4):hover img{
@@ -121,6 +177,8 @@ button{
 
   section button:nth-child(5):hover {
     background-color: #616161;
+    transition: background-color 0.3s ease; 
+    border: 0.1em solid #b5b8b2; 
   }
 
   section button:nth-child(5):hover img{
@@ -128,12 +186,33 @@ button{
   }
 
 
-.nations button {
-    display: block;
-    margin-bottom: 1em; 
+
+img[alt="zuko-firenation"] {
+  width: 9em;
+  grid-column-start: 2;
+  padding-top: 8em;
 }
 
 
-/* ... */
 
+/* grid code */
 
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: 12em 11em 100em;
+  grid-template-rows: min-content 1fr min-content;
+  column-gap: 7em;
+  padding-top: 2em;
+}
+
+.nations {
+  grid-column-start: 1;
+  padding-left: 4em;
+  padding-top: 6em;
+}
+
+header {
+  position: fixed;
+  color: var(--color-button-bg);
+  left: 15em;
+}
