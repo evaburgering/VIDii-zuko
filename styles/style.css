@@ -15,15 +15,19 @@
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
   box-sizing:border-box;  
+  padding: 0;
+  margin: 0;
 }
 
 body {
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #000000;
-  padding-left: 3em;
+  background-color: var(--color-background);
+  padding-left: 0em;
   background-image: url("../images/fire-gif.gif");
   background-position: center center;
+  background-repeat: no-repeat;
+  width: 100vw;
 }
 
 button:not([disabled]) {
@@ -59,16 +63,6 @@ img {
   --color-secondary-border-3: #b5b8b2;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--color-background);
-  padding-left: 3em;
-  background-image: url("../images/fire-gif.gif");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 button:not([disabled]) {
   cursor: pointer;
 }
@@ -82,11 +76,12 @@ h1 {
   color: var(--color-headings);
   font-family: 'Zuko-type';
   color: var(--color-button-bg);
+  text-align: center;
 }
 
 h2 {
   font-family: 'SubtextTitel';
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 h3 {
@@ -103,11 +98,13 @@ article {
   background-image: url('../images/scroll.png');
   background-size: cover;
   background-repeat: no-repeat;
-  width: 35%;
   grid-column-start: 3;
-  justify-self: stretch;
-  padding-left: 2em;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
   padding-top: 4em;
+  width: 80%;
 }
 
 article h2 {
@@ -126,6 +123,8 @@ article p {
 section.nations p {
   color: var(--color-button-bg);
   text-align: center;
+  font-family: 'SubtextTitel';
+  font-weight: bold;
 }
 
 
@@ -190,7 +189,11 @@ button{
 img[alt="zuko-firenation"] {
   width: 9em;
   grid-column-start: 2;
-  padding-top: 8em;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
 }
 
 
@@ -198,21 +201,34 @@ img[alt="zuko-firenation"] {
 /* grid code */
 
 .grid-container {
-  display: inline-grid;
-  grid-template-columns: 12em 11em 100em;
-  grid-template-rows: min-content 1fr min-content;
-  column-gap: 7em;
-  padding-top: 2em;
+  display: grid;
+  grid-template-columns:1fr 2fr 3fr;
+  grid-template-rows:  20vh 80vh;
+  /* column-gap: 7em; */
+  width: 100vw;
 }
 
 .nations {
   grid-column-start: 1;
-  padding-left: 4em;
-  padding-top: 6em;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nations p{
+  margin-bottom: 1em;
 }
 
 header {
-  position: fixed;
   color: var(--color-button-bg);
-  left: 15em;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center;
 }
+
