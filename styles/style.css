@@ -194,6 +194,7 @@ img[alt="zuko-firenation"] {
   grid-row-end: 3;
   justify-self: center;
   align-self: center;
+  transition: src 0.3s ease;
 }
 
 
