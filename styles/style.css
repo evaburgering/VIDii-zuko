@@ -185,6 +185,7 @@ img[alt="zuko-firenation"] {
 }
 
 img[alt="plateau"] {
+  /* bron: https://en.m.wikipedia.org/wiki/File:Red_oval.svg*/
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -192,7 +193,7 @@ img[alt="plateau"] {
   align-self:flex-end;
   z-index: -50;
   position: relative;
-  bottom: -6em;
+  bottom: -6.1em;
   scale: 70%;
   filter: brightness(0.4);
 }
@@ -246,4 +247,7 @@ ul {
   width: 1px;
   display: none;
 }
+door deze code toe te voegen verspringt de opmaak voor mijn knoppen, weten allemaal niet hoe (inclusief Sam) dus 
+heb er voor gekozen om het er uit te commenten. Ik had de h toe gevoegd om de code semantisch te 
+maken en nog beschrikbaar te maken voor de screenreaderzonder de opmaak van de pagina aan te passen
 */ 

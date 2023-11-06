@@ -136,7 +136,7 @@ document.body.style.backgroundImage = "url('images/dirt.gif')";
 
     //dit zijn de h3 elementen
     displayText(aardenTextEpisode, "Episode 10,13,20 of season 2 ");
-    displayText(aardenTextEpisode1, "Seizoen 2 en 3");
+    displayText(aardenTextEpisode1, "Seizoen 2 and 3");
 
 };
 
