@@ -48,6 +48,7 @@ body {
   background-position: 20% 50%;
   background-repeat: no-repeat;
   width: 100vw;
+  overflow: hidden;
 }
 
 button:not([disabled]) {
@@ -67,6 +68,12 @@ h1 {
   font-family: 'Zuko-type';
   text-align: center;
 }
+
+h1:hover{
+  color: #a2bdd3;
+  cursor: pointer;
+}
+
 
 h2 {
   font-family: 'SubtextTitel';
@@ -177,6 +184,19 @@ img[alt="zuko-firenation"] {
   transition: src 0.3s ease;
 }
 
+img[alt="plateau"] {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self:flex-end;
+  z-index: -50;
+  position: relative;
+  bottom: -6em;
+  scale: 70%;
+  filter: brightness(0.4);
+}
+
 /* grid code */
 
 .grid-container {
@@ -214,3 +234,16 @@ ul {
   list-style: none;
   font-size: 0.7em;
 }
+
+/* grid code 
+.screen-reader-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: fixed;
+  white-space: nowrap; 
+  width: 1px;
+  display: none;
+}
+*/ 

@@ -53,6 +53,7 @@ function displayText(paragraafElement, tekst) {
 
 
 
+
 // element knoppen voor de text - water-natie
 var waterButton = document.querySelector(".nations button:nth-of-type(2)");
 
@@ -86,9 +87,13 @@ waterButton.onclick = function () {
     displayText(waterTextTechnieken, "In the Water Tribe, Zuko learns the <strong>'Breath of Fire,'</strong> a technique he later applies to his firebending. This involves bending fire by controlling his breath, enhancing his firebending techniques and allowing for more precision and power.");
 
     //dit zijn de h3 elementen
-    displayText(waterTextEpisode, "dit is sode");
-    displayText(waterTextEpisode1, "season 2");
+    displayText(waterTextEpisode, "In the beginning of season 2 until mid season 3");
+    displayText(waterTextEpisode1, "Season 2");
 };
+
+
+
+
 
 
 
@@ -130,10 +135,15 @@ document.body.style.backgroundImage = "url('images/dirt.gif')";
 
 
     //dit zijn de h3 elementen
-    displayText(aardenTextEpisode, "episode 10,13,20 of season 2 ");
-    displayText(aardenTextEpisode1, "seizoen 2 en 3");
+    displayText(aardenTextEpisode, "Episode 10,13,20 of season 2 ");
+    displayText(aardenTextEpisode1, "Seizoen 2 en 3");
 
 };
+
+
+
+
+
 
 
 // element knoppen voor de text - lucht-natie
@@ -161,19 +171,26 @@ luchtButton.onclick = function () {
     //dit zijn de p elementen
     displayText(luchtText, "Zuko begins to grow his hair longer, and this change in his hairstyle symbolizes his growth and transformation as a character. The longer, loose hair represents a more relaxed and open demeanor, indicating that Zuko is becoming increasingly comfortable in his new role as an ally of Aang and is deeply committed to becoming a better person.");
     displayText(luchtTextOutfit, "Zuko's retention of his Fire Nation attire in the Western Air Temple while collaborating with Team Avatar reflects his inner conflicts and desire to leave his past behind, all the while symbolizing his heritage and former loyalty. It portrays his complex character and inner struggle.");
-    displayText(luchtTextMoments1, "Andere teksenten dan die andere");
-    displayText(luchtTextMoments2, "Andere teksenten dan die andere");
-    displayText(luchtTextMoments3, "Andere teksenten dan die andere");
-    displayText(luchtTextMoments4, "Andere teksenten dan die andere");
-    displayText(luchtTextMoments5, "Andere teksenten dan die andere");
+    displayText(luchtTextMoments1, "<strong>Quest for His Inner Fire</strong>Zuko's symbolic journey to discover his true identity and purpose occurred during his time in the Air Nomad temples.");
+    displayText(luchtTextMoments2, "<strong>Meeting Guru Pathik</strong>In the Air Nomad temples, Zuko encountered Guru Pathik, who taught him about inner balance and emotional control.");
+    displayText(luchtTextMoments3, "<strong>Meeting the Sun Warriors:</strong>Zuko met the Sun Warriors in the Air Nomad temples, where he confronted the consequences of Fire Nation actions and desired reconciliation.");
+    displayText(luchtTextMoments4, "<strong>Understanding of Peace and Responsibility</strong>During his time in the Air Nomad temples, Zuko developed a deeper comprehension of peace and his responsibility to restore balance in the world.");
+    displayText(luchtTextMoments5, "<strong>Reconnecting with Uncle Iroh:</strong>While staying in the Western Air Temple, Zuko reunited with his beloved Uncle Iroh, who had been imprisoned by the Fire Nation. This reconnection marked a significant moment in Zuko's journey as he sought guidance and redemption from Iroh, who had become a source of wisdom and support in his life.");
     displayText(luchtTextTechnieken, "In the Air Temples, Zuko learned crucial life lessons, including inner balance, self-discovery, responsibility, and empathy, all of which played a vital role in his character development.");
 
 
     //dit zijn de h3 elementen
-    displayText(luchtTextEpisode, "dit is sode");
-    displayText(luchtTextEpisode1, "in the end of season two");
+    displayText(luchtTextEpisode, "Episode 19 season two, 6 and 3 from season 3");
+    displayText(luchtTextEpisode1, "In the end of season two");
 
 };
+
+
+
+
+
+
+
 
     //hier onder komt de code voor de verandere zuko fotos die bij de verschillende naties passen
     var zukoAfbeelding = document.querySelector("img[src='images/zuko-vuur.png']");
@@ -217,3 +234,27 @@ luchtButton.onclick = function () {
         }, 200); //  overgang in milliseconden
       });
 
+
+
+
+
+
+
+
+      
+      
+//  easter egg code, bron: Chat GPT
+//  Bron van bliksem:https://openprocessing.org/sketch/872004/
+      const gif = document.createElement('img');
+      gif.src = 'images/bliksem.gif';
+      gif.alt = 'Bliksem GIF';
+      gif.style.cssText = 'position:fixed;top:0;left:0;width:80%;height:100%;display:none';
+      document.body.appendChild(gif); //Hierdoor wordt het element aan de pagina toegevoegd, maar het blijft verborgen.
+      
+      const zukoHeading = document.getElementById('zuko-bliksem');
+      
+      zukoHeading.addEventListener('click', function() {
+        gif.style.display = 'block';
+        setTimeout(() => gif.style.display = 'none', 3000);
+      });
+      
