@@ -8,12 +8,16 @@ var vuurnatieButton = document.querySelector(".nations button:nth-of-type(1)");
 //dit zijn de p elementen
 var vuurnatieText = document.querySelector("article:nth-of-type(1) > p:nth-of-type(1)");
 var vuurnatieTextOutfit = document.querySelector("article:nth-of-type(1) > p:nth-of-type(2)");
-var vuurnatieTextMoments = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(1)");
+var vuurnatieTextMoments1 = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(2)");
+var vuurnatieTextMoments2 = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(3)");
+var vuurnatieTextMoments3 = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(4)");
+var vuurnatieTextMoments4 = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(5)");
+var vuurnatieTextMoments5 = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(6)");
 var vuurnatieTextTechnieken = document.querySelector("article:nth-of-type(1) > p:nth-of-type(3)");
 
 //dit zijn de h3 elementen
 var vuurnatieTextEpisode = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(1)");
-var vuurnatieTextEpisode1 = document.querySelector("article:nth-of-type(1) > h3:nth-of-type(1)");
+var vuurnatieTextEpisode1 = document.querySelector("h3");
 
 
 vuurnatieButton.onclick = function () {
@@ -22,8 +26,12 @@ vuurnatieButton.onclick = function () {
 
     //dit zijn de p elementen
     displayText(vuurnatieText, "At the beginning of the series, Zuko has a distinctive tail known as a <strong>'sikha.'</strong> The sikha represents the spiritual connection and obedience of firebenders to the Fire Lord and their national identity. Zuko's sikha is an important symbol of his loyalty to the Fire Nation and his desire to find the Avatar, Aang, in order to restore honor to his family and himself.");
-    displayText(vuurnatieTextOutfit, "Tijdens zijn ballingschap in de Aardekoninkrijk-stad Ba Sing Se draagt Zuko een eenvoudiger en casual outfit, zonder zijn topknoop. Deze outfit vertegenwoordigt zijn tijdelijke breuk met de Vuurnatie en zijn zoektocht naar een nieuw leven.");
-    displayText(vuurnatieTextMoments, "Andere tekst voor zijn momenten");
+    displayText(vuurnatieTextOutfit, "During his exile in the Earth Kingdom city of Ba Sing Se, Zuko wears a simpler and more casual outfit, without his topknot. This attire represents his temporary separation from the Fire Nation and his quest for a new life.");
+    displayText(vuurnatieTextMoments1, "<strong>New Friendships:</strong> Zuko formed meaningful Earth Kingdom friendships, experiencing their kindness and broadening his perspective.");
+    displayText(vuurnatieTextMoments2, "<strong>The Blue Spirit:</strong> Operating as the Blue Spirit, Zuko fought injustice discreetly while wrestling with his inner conflict.");
+    displayText(vuurnatieTextMoments3, "<strong>Greater Understanding of Injustice:</strong> Zuko confronted the war's consequences and the Fire Nation's cruelty, heightening his awareness of its injustices.");
+    displayText(vuurnatieTextMoments4, "<strong>Search for Inner Peace:</strong> During his exile, Zuko pursued meditation and inner tranquility.");
+    displayText(vuurnatieTextMoments5, "<strong>Encounters with the Avatar Group:</strong>Zuko met Avatar group members, Aang, Katara, Sokka, and Toph, reshaping his beliefs and inspiring his decision to join them in the quest for peace.");
     displayText(vuurnatieTextTechnieken, "Zuko learned the technique <strong>'Generating Lightning'</strong> from his uncle Iroh, a master of firebending and lightning control. This advanced technique requires not only powerful firebending skills but also an understanding of inner balance and control over chi. Zuko was one of the few who successfully mastered this technique. It later became a significant weapon in his arsenal and played a crucial role in the series.");
 
 
@@ -51,12 +59,16 @@ var waterButton = document.querySelector(".nations button:nth-of-type(2)");
 //dit zijn de p elementen
 var waterText = document.querySelector("article:nth-of-type(1) > p:nth-of-type(1)");
 var waterTextOutfit = document.querySelector("article:nth-of-type(1) > p:nth-of-type(2)");
-var waterTextMoments = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(1)");
-var waterTextTechnieken = document.querySelector("article:nth-of-type(1) > p:nth-of-type(4)");
+var waterTextMoments1 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(2)");
+var waterTextMoments2 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(3)");
+var waterTextMoments3 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(4)");
+var waterTextMoments4 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(5)");
+var waterTextMoments5 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(6)");
+var waterTextTechnieken = document.querySelector("article:nth-of-type(1) > p:nth-of-type(3)");
 
 //dit zijn de h3 elementen
-var waterTextEpisode = document.querySelector("article:nth-of-type(1) > h3:nth-of-type(1)");
-var waterTextEpisode1 = document.querySelector("article:nth-of-type(1) > h3:nth-of-type(1)");
+var waterTextEpisode = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(1)");
+var waterTextEpisode1 = document.querySelector("h3");
 
 
 waterButton.onclick = function () {
@@ -64,14 +76,18 @@ waterButton.onclick = function () {
     document.body.style.backgroundImage = "url('images/water1-giphy.gif')";
 
     //dit zijn de p elementen
-    displayText(waterText, "Tekst van de aardenrijk");
-    displayText(waterTextOutfit, "Andere te");
-    displayText(waterTextMoments, "<strong>Zuko learns waterbending from Katara:</strong> After Zuko is injured and cared for by Katara, he learns some basic principles of waterbending. This is a significant turning point as it's the first time he attempts to master bending techniques from another nation.<strong>Confrontation with his past:</strong> In the Water Tribe, Zuko confronts his family's history and the complexity of his relationship with his father, the Fire Nation, and his quest for honor.<strong>Collaboration with Katara:</strong> During their time in the Water Tribe, Zuko and Katara work together on various occasions. This leads to moments of understanding and growth in their relationship, sowing the seeds of a possible alliance.<strong>The abduction of Appa:</strong> In Book 2, Episode 17, ''Lake Laogai,' Zuko plays a key role in the abduction of Appa. While this event largely takes place in Ba Sing Se of the Earth Kingdom, it has significant consequences for Team Avatar's journey and dynamics with Zuko. <strong>Zuko's confrontation with Zhao:</strong> Zuko has a confrontation with Commander Zhao in the Southern Water Tribe. This marks one of the early confrontations with important characters in the series.);");
-    displayText(waterTextTechnieken, "In the Water Tribe, Zuko learns the 'Breath of Fire,' a technique he later applies to his firebending. This involves bending fire by controlling his breath, enhancing his firebending techniques and allowing for more precision and power.");
+    displayText(waterText, "When Zuko arrives at the Water Tribe, his hair becomes looser and longer, covering his face. This change is a symbol of his willingness to change and leave his past behind to pursue a better future. This alteration in his appearance highlights his inner transformation and his quest for redemption and reconciliation.");
+    displayText(waterTextOutfit, "Zuko's Fire Nation attire initially causes tension in the Water Tribe due to historical animosities. Recognized as a Fire Nation representative, it fosters distrust. Over time, he realizes its hindrance to pursuing peace and cooperation, leading him to adopt Water Tribe clothing, symbolizing his personal transformation and quest for reconciliation.");
+    displayText(waterTextMoments1, "<strong>Zuko learns waterbending from Katara:</strong> When Zuko is injured and tended to by Katara, he begins learning waterbending, marking his first attempt to master bending from a different nation.);");
+    displayText(waterTextMoments2, "<strong>Confrontation with his past:</strong> In the Water Tribe, Zuko confronts his family's history and the complexity of his relationship with his father, the Fire Nation, and his quest for honor.");
+    displayText(waterTextMoments3, "<strong>Collaboration with Katara:</strong> In the Water Tribe, Zuko and Katara collaborate on several occasions, fostering mutual understanding and relationship growth, hinting at a potential alliance.");
+    displayText(waterTextMoments4, "<strong>The abduction of Appa:</strong> Zuko plays a pivotal role in Appa's abduction, impacting Team Avatar's journey and dynamics.");
+    displayText(waterTextMoments5, "<strong>Zuko's confrontation with Zhao:</strong> Zuko has a confrontation with Commander Zhao in the Southern Water Tribe. This marks one of the early confrontations with important characters in the series.);    ");
+    displayText(waterTextTechnieken, "In the Water Tribe, Zuko learns the <strong>'Breath of Fire,'</strong> a technique he later applies to his firebending. This involves bending fire by controlling his breath, enhancing his firebending techniques and allowing for more precision and power.");
 
     //dit zijn de h3 elementen
     displayText(waterTextEpisode, "dit is sode");
-    displayText(waterTextEpisode1, "dit sode1");
+    displayText(waterTextEpisode1, "season 2");
 };
 
 
@@ -86,12 +102,16 @@ var aardenButton = document.querySelector(".nations button:nth-of-type(3)");
 //dit zijn de p elementen
 var aardenText = document.querySelector("article:nth-of-type(1) > p:nth-of-type(1)");
 var aardenTextOutfit = document.querySelector("article:nth-of-type(1) > p:nth-of-type(2)");
-var aardenTextMoments = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(1)");
-var aardenTextTechnieken = document.querySelector("article:nth-of-type(1) > p:nth-of-type(4)");
+var aardenTextMoments1 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(2)");
+var aardenTextMoments2 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(3)");
+var aardenTextMoments3 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(4)");
+var aardenTextMoments4 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(5)");
+var aardenTextMoments5 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(6)");
+var aardenTextTechnieken = document.querySelector("article:nth-of-type(1) > p:nth-of-type(3)");
 
 //dit zijn de h3 elementen
-var aardenTextEpisode = document.querySelector("article:nth-of-type(1) > h3:nth-of-type(1)");
-var aardenTextEpisode1 = document.querySelector("article:nth-of-type(1) >  h3:nth-of-type(1)");
+var aardenTextEpisode = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(1)");
+var aardenTextEpisode1 = document.querySelector("h3");
 
 
 aardenButton.onclick = function () {
@@ -99,15 +119,19 @@ aardenButton.onclick = function () {
 document.body.style.backgroundImage = "url('images/dirt.gif')";
 
     //dit zijn de p elementen
-    displayText(aardenText, "Tekst van de aardenrijk");
-    displayText(aardenTextOutfit, "Zuko's green outfit, which he wore during his exile in the Earth Kingdom, symbolized a break from his old life in the Fire Nation and his quest for a new identity and purpose. This clothing style was more in line with the simple attire of Earth Kingdom residents, which starkly contrasted with the striking red Fire Nation mantle. During his exile, Zuko often used the alias 'Lee' to conceal his true identity and blend in, especially due to the hostility toward the Fire Nation in the Earth Kingdom.");
-    displayText(aardenTextMoments, "Andere teksenten");
-    displayText(aardenTextTechnieken, "Andere chnieken");
+    displayText(aardenText, "During his time in the Earth Kingdom, Zuko's change in hairstyle, letting go of his topknot for a more casual and loose look, symbolizes his character growth and temporary detachment from the Fire Nation. It visually represents his pursuit of a new life and purpose beyond chasing the Avatar.");
+    displayText(aardenTextOutfit, "Zuko's Earth Kingdom attire symbolized his departure from the Fire Nation. It differed from the red Fire Nation clothing, and he often used the alias 'Lee' to hide his identity while fitting in with Earth Kingdom residents due to their hostility toward the Fire Nation.");
+    displayText(aardenTextMoments1, "<strong>Meeting Jet and rejection of violence:</strong> Zuko briefly joins the Freedom Fighter Jet, but after a confrontation over innocent villagers, he chooses non-violence and leaves the group.");
+    displayText(aardenTextMoments2, "<strong>Meeting Toph Beifong:</strong> In season 2, Zuko briefly joins the Avatar's group, where he meets Toph. Her fearless and independent attitude helps Zuko become more self-confident and resilient.");
+    displayText(aardenTextMoments3, "<strong>Decision to help the Avatar:</strong> Zuko chooses to assist the Avatar instead of capturing him in 'The Crossroads of Destiny,' a crucial decision in his character development as he reconsiders his relationship with his father and his desire for honor.");
+    displayText(aardenTextMoments4, "<strong>Compassion towards Katara:</strong> Zuko's offer to help Katara find Appa in 'Lake Laogai' shows his compassion and growth, paving the way for further character development.");
+    displayText(aardenTextMoments5, "<strong>Friendship with Iroh and tea sessions:</strong> During his stay in Ba Sing Se, Zuko develops a deeper bond with his uncle Iroh. Iroh's calm and peaceful nature positively influences Zuko.");
+    displayText(aardenTextTechnieken, "During his time in the Earth Kingdom, Zuko learned new firebending techniques, chose non-violence after a conflict with Jet, gained confidence through meeting Toph, and showed compassion, especially towards Katara. Tea sessions with Uncle Iroh promoted inner growth and character development.");
 
 
     //dit zijn de h3 elementen
-    displayText(aardenTextEpisode, "dit is sode");
-    displayText(aardenTextEpisode1, "dit sode1");
+    displayText(aardenTextEpisode, "episode 10,13,20 of season 2 ");
+    displayText(aardenTextEpisode1, "seizoen 2 en 3");
 
 };
 
@@ -118,12 +142,16 @@ var luchtButton = document.querySelector(".nations button:nth-of-type(4)");
 //dit zijn de p elementen
 var luchtText = document.querySelector("article:nth-of-type(1) > p:nth-of-type(1)");
 var luchtTextOutfit = document.querySelector("article:nth-of-type(1) > p:nth-of-type(2)");
-var luchtTextMoments = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(1)");
-var luchtTextTechnieken = document.querySelector("article:nth-of-type(1) > p:nth-of-type(4)");
+var luchtTextMoments1 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(2)");
+var luchtTextMoments2 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(3)");
+var luchtTextMoments3 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(4)");
+var luchtTextMoments4 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(5)");
+var luchtTextMoments5 = document.querySelector("article:nth-of-type(1)  ul > li:nth-of-type(6)");
+var luchtTextTechnieken = document.querySelector("article:nth-of-type(1) > p:nth-of-type(3)");
 
 //dit zijn de h3 elementen
-var luchtTextEpisode = document.querySelector("article:nth-of-type(1) > h3:nth-of-type(1)");
-var luchtTextEpisode1 = document.querySelector("article:nth-of-type(1) > h3:nth-of-type(1)");
+var luchtTextEpisode = document.querySelector("article:nth-of-type(1) > ul > li:nth-of-type(1)");
+var luchtTextEpisode1 = document.querySelector("h3");
 
 
 luchtButton.onclick = function () {
@@ -131,15 +159,19 @@ luchtButton.onclick = function () {
     document.body.style.backgroundImage = "url('images/water-giphy.gif')";
 
     //dit zijn de p elementen
-    displayText(luchtText, "Tekst van de luchtrijk");
-    displayText(luchtTextOutfit, "Andere tekst dan hiervoor");
-    displayText(luchtTextMoments, "Andere teksenten dan die andere");
-    displayText(luchtTextTechnieken, "Andere technieken duhu");
+    displayText(luchtText, "Zuko begins to grow his hair longer, and this change in his hairstyle symbolizes his growth and transformation as a character. The longer, loose hair represents a more relaxed and open demeanor, indicating that Zuko is becoming increasingly comfortable in his new role as an ally of Aang and is deeply committed to becoming a better person.");
+    displayText(luchtTextOutfit, "Zuko's retention of his Fire Nation attire in the Western Air Temple while collaborating with Team Avatar reflects his inner conflicts and desire to leave his past behind, all the while symbolizing his heritage and former loyalty. It portrays his complex character and inner struggle.");
+    displayText(luchtTextMoments1, "Andere teksenten dan die andere");
+    displayText(luchtTextMoments2, "Andere teksenten dan die andere");
+    displayText(luchtTextMoments3, "Andere teksenten dan die andere");
+    displayText(luchtTextMoments4, "Andere teksenten dan die andere");
+    displayText(luchtTextMoments5, "Andere teksenten dan die andere");
+    displayText(luchtTextTechnieken, "In the Air Temples, Zuko learned crucial life lessons, including inner balance, self-discovery, responsibility, and empathy, all of which played a vital role in his character development.");
 
 
     //dit zijn de h3 elementen
     displayText(luchtTextEpisode, "dit is sode");
-    displayText(luchtTextEpisode1, "dit sode1");
+    displayText(luchtTextEpisode1, "in the end of season two");
 
 };
 
@@ -152,8 +184,8 @@ luchtButton.onclick = function () {
     // Verandert de Zuko-afbeelding voor de vuur-natie met een trasitie
         zukoAfbeelding.style.opacity = 0; // vervagen van de afbeelding
         setTimeout(function () {
-          zukoAfbeelding.src = "images/zuko-vuur.png";
-          zukoAfbeelding.style.opacity = 1; //  verschijnen met vervagen
+          zukoAfbeelding.src = "images/zuko-vuur.png"; //  bron:https://ugokawaii.com/en/others/burning-flame/
+          zukoAfbeelding.style.opacity = 1; //  verschijnen met vervagen bron:ChatGpt
         }, 200); //overgang in milliseconden
       });
       
@@ -161,8 +193,8 @@ luchtButton.onclick = function () {
      // Verandert de Zuko-afbeelding voor de water-natie met een trasitie
         zukoAfbeelding.style.opacity = 0; // vervagen van de afbeelding
         setTimeout(function () {
-          zukoAfbeelding.src = "images/zuko-water.png";
-          zukoAfbeelding.style.opacity = 1; //verschijnen met vervagen
+          zukoAfbeelding.src = "images/zuko-water.png"; //bron: https://giphy.com/stickers/zouksingapore-transparent-qHzA41vPQ4NPybwe6X
+          zukoAfbeelding.style.opacity = 1; //verschijnen met vervagen bron:ChatGpt
         }, 200); //overgang in milliseconden
       });
       
@@ -170,18 +202,18 @@ luchtButton.onclick = function () {
         // Verandert de Zuko-afbeelding voor de aarden-natie met een trasitie
         zukoAfbeelding.style.opacity = 0; // vervagen van de afbeelding
         setTimeout(function () {
-          zukoAfbeelding.src = "images/zuko-aarde.png";
-          zukoAfbeelding.style.opacity = 1; //  verschijnen met vervagen
+          zukoAfbeelding.src = "images/zuko-aarde.png"; //bron:https://koby.games/2d-animations
+          zukoAfbeelding.style.opacity = 1; //  verschijnen met vervagen bron:ChatGpt
         }, 200); // overgang in milliseconden
       });
       
       
       luchtButton.addEventListener("click", function () {
         // Verandert de Zuko-afbeelding voor de lucht-natie met een trasitie
-        zukoAfbeelding.style.opacity = 0; // Begin met het vervagen van de afbeelding
+        zukoAfbeelding.style.opacity = 0; // vervagen van de afbeelding
         setTimeout(function () {
-          zukoAfbeelding.src = "images/zuko-lucht.png";
-          zukoAfbeelding.style.opacity = 1; // Laat de nieuwe afbeelding verschijnen met vervagen
-        }, 200); // Overeenkomstig met de duur van de overgang in milliseconden
+          zukoAfbeelding.src = "images/zuko-lucht.png"; //bron:https://giphy.com/stickers/avatar-elementi-4-sIw0RS82ZT32uZ9OER
+          zukoAfbeelding.style.opacity = 1; //  verschijnen met vervagen bron:ChatGpt
+        }, 200); //  overgang in milliseconden
       });
 
