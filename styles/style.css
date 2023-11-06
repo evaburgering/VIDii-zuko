@@ -193,9 +193,7 @@ img[alt="plateau"] {
   align-self:flex-end;
   z-index: -50;
   position: relative;
-  bottom: -6.1em;
   scale: 70%;
-  filter: brightness(0.4);
 }
 
 /* grid code */
