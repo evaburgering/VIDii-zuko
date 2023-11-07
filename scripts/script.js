@@ -72,6 +72,7 @@ var waterTextEpisode = document.querySelector("article:nth-of-type(1) > ul > li:
 var waterTextEpisode1 = document.querySelector("h3");
 
 
+
 waterButton.onclick = function () {
     //dit is de achtergrond
     document.body.style.backgroundImage = "url('images/water1-giphy.gif')";
@@ -137,7 +138,6 @@ document.body.style.backgroundImage = "url('images/dirt.gif')";
     //dit zijn de h3 elementen
     displayText(aardenTextEpisode, "Episode 10,13,20 of season 2 ");
     displayText(aardenTextEpisode1, "Seizoen 2 and 3");
-
 };
 
 
@@ -182,6 +182,7 @@ luchtButton.onclick = function () {
     //dit zijn de h3 elementen
     displayText(luchtTextEpisode, "Episode 19 season two, 6 and 3 from season 3");
     displayText(luchtTextEpisode1, "In the end of season two");
+
 
 };
 
@@ -258,3 +259,76 @@ luchtButton.onclick = function () {
         setTimeout(() => gif.style.display = 'none', 3000);
       });
       
+
+
+
+
+
+
+// Dece code is voor de audio van de naties, bron: de lessen van Sanne doormiddel van https://codepen.io/shooft/pen/bGKeeZL en deels door chatGPT
+const fireAudio = document.getElementById("fireAudio");
+const waterAudio = document.getElementById("waterAudio");
+const earthAudio = document.getElementById("earthAudio");
+const airAudio = document.getElementById("airAudio");
+
+// Variabele om bij te houden welke knop het laatst is ingedrukt
+let lastClickedButton = null;
+
+// Variabele om bij te houden of het liedje aan het afspelen is
+let isPlaying = false;
+
+vuurnatieButton.addEventListener("click", function () {
+  if (isPlaying && lastClickedButton === fireAudio) {
+    fireAudio.pause(); // Pauzeer het liedje als het al aan het afspelen is
+    isPlaying = false;
+  } else {
+    if (lastClickedButton) {
+      lastClickedButton.pause(); // Stop het laatst afgespeelde liedje
+    }
+    lastClickedButton = fireAudio;
+    fireAudio.play();
+    isPlaying = true;
+  }
+});
+
+waterButton.addEventListener("click", function () {
+  if (isPlaying && lastClickedButton === waterAudio) {
+    waterAudio.pause();
+    isPlaying = false;
+  } else {
+    if (lastClickedButton) {
+      lastClickedButton.pause();
+    }
+    lastClickedButton = waterAudio;
+    waterAudio.play();
+    isPlaying = true;
+  }
+});
+
+aardenButton.addEventListener("click", function () {
+  if (isPlaying && lastClickedButton === earthAudio) {
+    earthAudio.pause();
+    isPlaying = false;
+  } else {
+    if (lastClickedButton) {
+      lastClickedButton.pause();
+    }
+    lastClickedButton = earthAudio;
+    earthAudio.play();
+    isPlaying = true;
+  }
+});
+
+luchtButton.addEventListener("click", function () {
+  if (isPlaying && lastClickedButton === airAudio) {
+    airAudio.pause();
+    isPlaying = false;
+  } else {
+    if (lastClickedButton) {
+      lastClickedButton.pause();
+    }
+    lastClickedButton = airAudio;
+    airAudio.play();
+    isPlaying = true;
+  }
+});
