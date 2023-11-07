@@ -193,7 +193,8 @@ img[alt="plateau"] {
   align-self:flex-end;
   z-index: -50;
   position: relative;
-  scale: 70%;
+  bottom: -1em;
+  scale: 55%;
 }
 
 /* grid code */
