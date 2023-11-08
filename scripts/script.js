@@ -247,7 +247,7 @@ luchtButton.onclick = function () {
 //  easter egg code, bron: Chat GPT
 //  Bron van bliksem:https://openprocessing.org/sketch/872004/
       const gif = document.createElement('img');
-      gif.src = 'images/bliksem.gif';
+      gif.src = './images/bliksem.gif';
       gif.alt = 'Bliksem GIF';
       gif.style.cssText = 'position:fixed;top:0;left:0;width:80%;height:100%;display:none';
       document.body.appendChild(gif); //Hierdoor wordt het element aan de pagina toegevoegd, maar het blijft verborgen.
