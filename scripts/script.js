@@ -270,6 +270,7 @@ const fireAudio = document.getElementById("fireAudio");
 const waterAudio = document.getElementById("waterAudio");
 const earthAudio = document.getElementById("earthAudio");
 const airAudio = document.getElementById("airAudio");
+// bron van de audio:https://www.soundboard.com/sb/avatarthelastairbender
 
 // Variabele om bij te houden welke knop het laatst is ingedrukt
 let lastClickedButton = null;
