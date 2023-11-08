@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'Zuko-type';
+  src: url('../fonts/Road_Rage.woff') format('woff2');
+}
+
+@font-face {
+  font-family: 'SubtextTitel';
+  src: url('../fonts/Herculanum Regular.woff') format('woff');
+  /* bron: https://fontsgeek.com/herculanum-font */
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+
+/* naar een idee van Jen Simmons */
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Kleurvariabelen */
+  --color-background: #000000;
+  --color-headings: rgb(255, 255, 255);
+  --color-button-bg: #E4E0DF;
+  --color-button-border: transparent;
+  --color-button-hover: #932E0F;
+  --color-button-border-hover: #b65555;
+
+  --color-secondary-bg-1: #2c1a53;
+  --color-secondary-border-1: #504568;
+
+  --color-secondary-bg-2: #304B14;
+  --color-secondary-border-2: #67725a;
+
+  --color-secondary-bg-3: #616161;
+  --color-secondary-border-3: #b5b8b2;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  padding-left: 0em;
+  background-image: url("../images/fire-gif.gif"); /* bron: https://ugokawaii.com/en/others/burning-flame/ */
+  background-position: 20% 50%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  overflow: hidden;
+}
+
+button:not([disabled]) {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+h1 {
+  color: var(--color-headings);
+  font-family: 'Zuko-type';
+  text-align: center;
+}
+
+h1:hover{
+  color: #a2bdd3;
+  cursor: pointer;
+}
+
+
+h2 {
+  font-family: 'SubtextTitel';
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 0.7em;
+}
+
+/* Scroll code v */
+
+article {
+  background-image: url('../images/scroll.png'); /* bron: zelf getekend */
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 80%;
+  padding: 4em 4em 0em 4em;
+}
+
+article h2 {
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+
+article p {
+  font-size: 0.7em;
+}
+
+section.nations p {
+  color: var(--color-button-bg);
+  text-align: center;
+  font-family: 'SubtextTitel';
+  font-weight: bold;
+}
+
+/* de Nation selectie code v */
+button {
+  width: 6em;
+  height: 6em;
+  background-color: #E4E0DF;
+  border-radius: 50%;
+  border: 0.5em;
+  border-color: none;
+  padding: 1.5em;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+button:focus {
+  outline: 0.4em solid #e3e3e3;
+}
+
+button:nth-of-type(1):hover {
+  background-color: #932E0F;
+  transition: background-color 0.3s ease;
+  border: 0.1em solid #b65555;
+  transform: scale(1.08);
+}
+
+button:nth-of-type(1):hover img {
+  filter: invert(1);
+}
+
+section button:nth-of-type(2):hover {
+  background-color: #2c1a53;
+  transition: background-color 0.3s ease;
+  border: 0.1em solid #504568;
+  transform: scale(1.08);
+}
+
+section button:nth-of-type(2):hover img {
+  filter: invert(1);
+}
+
+section button:nth-of-type(3):hover {
+  background-color: #304B14;
+  transition: background-color 0.3s ease;
+  border: 0.1em solid #67725a;
+  transform: scale(1.08);
+}
+
+section button:nth-of-type(3):hover img {
+  filter: invert(1);
+}
+
+section button:nth-of-type(4):hover {
+  background-color: #616161;
+  transition: background-color 0.3s ease;
+  border: 0.1em solid #b5b8b2;
+  transform: scale(1.08);
+}
+
+section button:nth-of-type(4):hover img {
+  filter: invert(1);
+}
+
+img[alt="zuko-firenation"] {
+  /* bron: zelf getekend */
+  width: 9em;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+  transition: src 0.3s ease;
+}
+
+img[alt="plateau"] {
+  /* bron: https://en.m.wikipedia.org/wiki/File:Red_oval.svg*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self:flex-end;
+  z-index: -50;
+  position: relative;
+  bottom: -1em;
+  scale: 55%;
+}
+
+/* grid code */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 20vh 80vh;
+  width: 100vw;
+}
+
+.nations {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nations p {
+  margin-bottom: 1em;
+}
+
+header {
+  color: var(--color-button-bg);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+ul {
+  list-style: none;
+  font-size: 0.7em;
+}
+
+.screen-reader-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: fixed;
+  white-space: nowrap; 
+  width: 1px;
+  display: none;
+}
+
